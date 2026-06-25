@@ -244,3 +244,14 @@ terms.html
 ```
 
 These pages are linked from the footer across the website.
+
+
+## Hidden Guest Network Page
+
+This version adds a hidden success page for the guest Wi-Fi network:
+
+```text
+guest-success.html
+```
+
+This page is intentionally not included in the top navigation.
