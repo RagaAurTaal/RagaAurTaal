@@ -334,3 +334,8 @@ Adjusts the Find Your Raga quiz mobile layout so it feels less zoomed-in on iPho
 ## Version 11.1.8
 
 Further reduces the visual scale of the Find Your Raga quiz on mobile and slightly reduces the quiz/result scale on desktop. This makes the quiz feel less zoomed-in on iPhone-sized screens while preserving the dark/gold design.
+
+
+## Version 11.1.9
+
+Compacts the Find Your Raga quiz on mobile so one question, all five answers, and the Back/Next buttons are intended to fit on iPhone-sized screens without scrolling. Adds a `quiz-page` body class to target only the quiz page.
