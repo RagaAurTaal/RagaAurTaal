@@ -329,3 +329,8 @@ Removes the "Take the Test" button from each individual raga detail page. The "B
 ## Version 11.1.7
 
 Adjusts the Find Your Raga quiz mobile layout so it feels less zoomed-in on iPhone-sized screens. This reduces mobile typography, card padding, option padding, and button sizing while keeping the desktop layout unchanged.
+
+
+## Version 11.1.8
+
+Further reduces the visual scale of the Find Your Raga quiz on mobile and slightly reduces the quiz/result scale on desktop. This makes the quiz feel less zoomed-in on iPhone-sized screens while preserving the dark/gold design.

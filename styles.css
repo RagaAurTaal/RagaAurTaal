@@ -880,3 +880,208 @@ p { color: var(--muted); }
     font-size: clamp(1.45rem, 6.1vw, 2rem);
   }
 }
+
+
+/* Version 11.1.8: Further zoom-out for Find Your Raga quiz */
+/* Desktop / larger screens */
+.quiz-section {
+  padding-top: clamp(28px, 3.5vw, 52px);
+}
+
+.quiz-shell,
+.quiz-result-card {
+  max-width: 1120px;
+  padding: clamp(26px, 3.2vw, 42px);
+}
+
+.quiz-question-title {
+  font-size: clamp(3.7rem, 6.2vw, 7.2rem);
+  line-height: 0.98;
+  margin-bottom: 20px;
+}
+
+.quiz-option span {
+  padding: 16px 18px;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.quiz-options {
+  gap: 10px;
+}
+
+.quiz-actions {
+  margin-top: 22px;
+}
+
+.quiz-actions .button,
+.result-actions .button,
+.saved-actions .button {
+  padding: 15px 22px;
+}
+
+.quiz-result-card h2 {
+  font-size: clamp(3.7rem, 6.1vw, 7.2rem);
+  line-height: 0.98;
+}
+
+.quiz-result-card .lede,
+.saved-raga-card p {
+  font-size: clamp(1.12rem, 2vw, 1.45rem);
+  line-height: 1.45;
+}
+
+/* Tablet and phone */
+@media (max-width: 900px) {
+  .quiz-shell,
+  .quiz-result-card {
+    width: calc(100vw - 44px);
+    padding: 24px 20px;
+  }
+
+  .quiz-question-title {
+    font-size: clamp(2.8rem, 10.8vw, 4.7rem);
+    line-height: 1.0;
+    margin-bottom: 20px;
+  }
+
+  .quiz-option span {
+    font-size: 1.2rem;
+    line-height: 1.35;
+    padding: 13px 15px;
+    border-radius: 16px;
+  }
+
+  .quiz-result-card h2 {
+    font-size: clamp(3rem, 11vw, 5.1rem);
+  }
+
+  .result-meta {
+    margin: 20px 0;
+  }
+}
+
+/* iPhone-sized screens */
+@media (max-width: 640px) {
+  .quiz-hero {
+    padding-top: 42px;
+    padding-bottom: 22px;
+  }
+
+  .quiz-hero h1 {
+    font-size: clamp(3.15rem, 13.2vw, 4.7rem);
+    line-height: 1.0;
+  }
+
+  .quiz-hero .lede {
+    font-size: clamp(1.22rem, 5vw, 1.65rem);
+    line-height: 1.45;
+  }
+
+  .quiz-section {
+    padding-top: 18px;
+  }
+
+  .quiz-shell,
+  .quiz-result-card {
+    width: calc(100vw - 28px);
+    border-radius: 22px;
+    padding: 20px 16px;
+  }
+
+  .quiz-progress {
+    margin-bottom: 18px;
+  }
+
+  .quiz-progress span {
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+  }
+
+  .quiz-bar {
+    height: 6px;
+  }
+
+  .quiz-question-title {
+    font-size: clamp(2.45rem, 10.6vw, 3.75rem);
+    line-height: 1.0;
+    margin-bottom: 18px;
+  }
+
+  .quiz-options {
+    gap: 9px;
+  }
+
+  .quiz-option span {
+    font-size: 1.05rem;
+    line-height: 1.33;
+    padding: 12px 14px;
+    border-radius: 15px;
+  }
+
+  .quiz-actions {
+    margin-top: 18px;
+    gap: 9px;
+  }
+
+  .quiz-actions .button,
+  .result-actions .button,
+  .saved-actions .button {
+    padding: 12px 14px;
+    font-size: 0.98rem;
+    min-height: 46px;
+  }
+
+  .saved-raga-card {
+    margin-top: 22px;
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .saved-raga-card p {
+    font-size: 1.1rem;
+    line-height: 1.42;
+  }
+
+  .quiz-result-card h2 {
+    font-size: clamp(2.8rem, 11vw, 4.25rem);
+  }
+
+  .quiz-result-card .lede {
+    font-size: 1.12rem;
+  }
+
+  .result-meta div {
+    padding: 12px;
+  }
+
+  .result-meta strong {
+    font-size: 1rem;
+  }
+}
+
+/* Smaller iPhones */
+@media (max-width: 420px) {
+  .quiz-shell,
+  .quiz-result-card {
+    width: calc(100vw - 22px);
+    padding: 18px 14px;
+  }
+
+  .quiz-question-title {
+    font-size: clamp(2.25rem, 10vw, 3.35rem);
+  }
+
+  .quiz-option span {
+    font-size: 0.98rem;
+    padding: 11px 12px;
+  }
+
+  .quiz-hero h1 {
+    font-size: clamp(2.85rem, 12.5vw, 4.15rem);
+  }
+
+  .quiz-hero .lede {
+    font-size: clamp(1.1rem, 4.8vw, 1.5rem);
+  }
+}
