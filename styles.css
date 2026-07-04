@@ -1306,3 +1306,9 @@ p { color: var(--muted); }
     justify-content: center;
   }
 }
+
+
+/* Version 11.2.1: Raga library cards without Time/Jati rows */
+.raga-card {
+  min-height: 220px;
+}

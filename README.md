@@ -352,3 +352,13 @@ Find Your Raga -> find-your-raga.html
 ```
 
 The third button changes to `Contact Form -> contact.html` when the visitor already has a saved Raga quiz result in browser storage.
+
+
+## Version 11.2.1
+
+Updates `/learn-about-ragas.html` so the main raga library cards no longer show Time and Jati. Those details remain on each individual raga detail page.
+
+
+## Version 11.2.2
+
+Removes wording that suggested Raga Yaman is also Kalyan. The Yaman detail page still lists Kalyan as the thaat, but no longer presents Kalyan/Yaman Kalyan as an alternate name for Yaman.
