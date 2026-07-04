@@ -3,29 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Recordings | Raga Aur Taal</title>
-  <meta name="description" content="Visit the Raga Aur Taal YouTube channel for recordings, bhajans, and Indian classical music performances." />
+  <title>Find Your Raga | Raga Aur Taal</title>
+  <meta name="description" content="Take a musical personality quiz to discover the raga that matches your mood, energy, and listening style." />
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ragaaurtaal.com/">
-  <meta property="og:title" content="Raga Aur Taal | Indian Classical Music & Bhajans">
-  <meta property="og:description" content="A modern archive for Indian classical music, devotional bhajans, recordings, raga and taal guides.">
+  <meta property="og:url" content="https://ragaaurtaal.com/find-your-raga.html">
+  <meta property="og:title" content="Find Your Raga | Raga Aur Taal">
+  <meta property="og:description" content="Take a musical personality quiz to discover the raga that matches your mood, energy, and listening style.">
   <meta property="og:image" content="https://ragaaurtaal.com/assets/social-preview.png">
   <meta property="og:image:secure_url" content="https://ragaaurtaal.com/assets/social-preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Raga Aur Taal | Indian Classical Music & Bhajans">
-  <meta name="twitter:description" content="A modern archive for Indian classical music, devotional bhajans, recordings, raga and taal guides.">
+  <meta name="twitter:title" content="Find Your Raga | Raga Aur Taal">
+  <meta name="twitter:description" content="Take a musical personality quiz to discover the raga that matches your mood, energy, and listening style.">
   <meta name="twitter:image" content="https://ragaaurtaal.com/assets/social-preview.png">
-  <meta http-equiv="refresh" content="0; url=https://www.youtube.com/@RagaAurTaal">
-  <link rel="canonical" href="https://www.youtube.com/@RagaAurTaal">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <script>window.location.replace('https://www.youtube.com/@RagaAurTaal');</script>
 </head>
 <body>
   <header class="site-header">
@@ -35,21 +32,36 @@
     <button class="mobile-toggle" aria-expanded="false" aria-label="Open menu" type="button"><span></span><span></span><span></span></button>
     <nav class="nav" aria-label="Main navigation">
         <a class="" href="index.html">Home</a>
-        <a class="" href="learn-about-ragas.html">Learn About Ragas</a>
+        <a class="active" href="learn-about-ragas.html">Learn About Ragas</a>
         <a class="" href="https://www.youtube.com/@RagaAurTaal" target="_blank" rel="noopener">Recordings</a>
         <a class="nav-cta" href="contact.html">Contact</a>
     </nav>
   </header>
   <main>
-    <section class="section page-hero reveal">
-      <p class="eyebrow">Recordings</p>
-      <h1>Opening our YouTube channel.</h1>
-      <p class="lede">For now, Raga Aur Taal recordings are hosted on YouTube.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="https://www.youtube.com/@RagaAurTaal" target="_blank" rel="noopener">Go to YouTube</a>
-        <a class="button secondary" href="index.html">Back Home</a>
-      </div>
+
+    <section class="section page-hero quiz-hero">
+      <p class="eyebrow">Interactive</p>
+      <h1>Find Your Raga</h1>
+      <p class="lede">Answer a few questions and discover which raga best matches your mood, energy, and musical personality. This is a playful learning tool, not a formal assessment.</p>
+      <div class="saved-raga-card" data-saved-raga hidden></div>
     </section>
+
+    <section class="section quiz-section">
+      <div class="quiz-shell" id="raga-quiz">
+        <div class="quiz-progress" aria-live="polite">
+          <span id="quiz-progress-text">Question 1 of 10</span>
+          <div class="quiz-bar"><span id="quiz-bar-fill"></span></div>
+        </div>
+        <div id="quiz-question"></div>
+        <div class="quiz-actions">
+          <button class="button secondary" type="button" id="quiz-back">Back</button>
+          <button class="button primary" type="button" id="quiz-next">Next</button>
+        </div>
+      </div>
+
+      <div class="quiz-result-card" id="quiz-result" hidden></div>
+    </section>
+
   </main>
   <footer class="site-footer">
     <div>
