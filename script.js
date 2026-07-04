@@ -242,3 +242,13 @@ if (homeRagaAction) {
     homeRagaAction.setAttribute('href', 'find-your-raga.html');
   }
 }
+
+
+// Version 11.3.0: PWA service worker registration.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js').catch(() => {
+      // Service worker registration can fail in local preview or unsupported browsers.
+    });
+  });
+}

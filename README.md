@@ -362,3 +362,32 @@ Updates `/learn-about-ragas.html` so the main raga library cards no longer show 
 ## Version 11.2.2
 
 Removes wording that suggested Raga Yaman is also Kalyan. The Yaman detail page still lists Kalyan as the thaat, but no longer presents Kalyan/Yaman Kalyan as an alternate name for Yaman.
+
+
+## Version 11.3.0 — PWA Support
+
+Adds Progressive Web App support.
+
+New files:
+
+```text
+manifest.webmanifest
+service-worker.js
+assets/pwa-icon-192.png
+assets/pwa-icon-512.png
+assets/pwa-maskable-512.png
+assets/apple-touch-icon.png
+```
+
+The PWA app name is:
+
+```text
+Raga Aur Taal
+```
+
+The app should be installable in supported browsers when served from the live HTTPS domain.
+
+
+## Version 11.3.1
+
+Updates the PWA icons so they have slightly rounded corners. This should look better for platforms like Windows while still allowing macOS, iOS, and Android to apply their own squircle/circle/adaptive masking.
