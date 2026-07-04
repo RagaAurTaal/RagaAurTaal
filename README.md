@@ -339,3 +339,16 @@ Further reduces the visual scale of the Find Your Raga quiz on mobile and slight
 ## Version 11.1.9
 
 Compacts the Find Your Raga quiz on mobile so one question, all five answers, and the Back/Next buttons are intended to fit on iPhone-sized screens without scrolling. Adds a `quiz-page` body class to target only the quiz page.
+
+
+## Version 11.2.0
+
+Updates homepage hero buttons:
+
+```text
+Learn About Ragas -> learn-about-ragas.html
+Listen to Recordings -> https://www.youtube.com/@RagaAurTaal
+Find Your Raga -> find-your-raga.html
+```
+
+The third button changes to `Contact Form -> contact.html` when the visitor already has a saved Raga quiz result in browser storage.

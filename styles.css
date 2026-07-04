@@ -1285,3 +1285,24 @@ p { color: var(--muted); }
     padding: 8px 10px;
   }
 }
+
+
+/* Version 11.2.0: Homepage three-button CTA layout */
+.hero-actions {
+  flex-wrap: wrap;
+}
+
+.hero-actions .button {
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .hero-actions {
+    gap: 12px;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    justify-content: center;
+  }
+}

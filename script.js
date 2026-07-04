@@ -226,3 +226,19 @@ window.scrollTo({ top: resultEl.offsetTop - 120, behavior: 'smooth' });
 
   renderQuestion();
 }
+
+
+// Version 11.2.0: Homepage dynamic third CTA.
+// If a visitor has not taken the quiz, show "Find Your Raga".
+// If a visitor already has a saved quiz result, show "Contact Form".
+const homeRagaAction = document.querySelector('[data-home-raga-action]');
+if (homeRagaAction) {
+  const savedRaga = localStorage.getItem('ragaAurTaalQuizResult');
+  if (savedRaga) {
+    homeRagaAction.textContent = 'Contact Form';
+    homeRagaAction.setAttribute('href', 'contact.html');
+  } else {
+    homeRagaAction.textContent = 'Find Your Raga';
+    homeRagaAction.setAttribute('href', 'find-your-raga.html');
+  }
+}
